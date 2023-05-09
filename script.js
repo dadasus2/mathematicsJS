@@ -21,8 +21,9 @@ function PrikladGenerator() {
 
 const pole = ['Spráááávně', 'Ty válíš!!', 'Dobrá práce!', 'Máma bude pyšná', 'Kde ses to naučil?!!',
     'Nauč mě to taky!', '😎😎😎', 'TY PODVÁDÍŠ!!', 'kdjafleirblkdnyij', 'hustý'];
-
 var streakNum = 0;
+
+
 function Kontrola() {
     var wrapper = document.getElementById("wrapper");
     var wrapperStreak = document.getElementById("wrapperStreak")
@@ -30,8 +31,8 @@ function Kontrola() {
     var streak = document.getElementById("streak");
 
     if (input == result) {
-        const nahodneCislo = Math.floor(Math.random() * pole.length);
-        const prvek = pole[nahodneCislo];
+        var nahodneCislo = Math.floor(Math.random() * pole.length);
+        var prvek = pole[nahodneCislo];
         hodnoceni.innerText = prvek;
         document.getElementById("value").value = "";
         streakNum++;
@@ -46,9 +47,7 @@ function Kontrola() {
         })
         streak.innerText = streakNum;
         PrikladGenerator();
-
     }
-
     else {
 
         hodnoceni.innerText = "Špatně, zkus znova";
