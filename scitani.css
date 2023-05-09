@@ -73,3 +73,22 @@ input {
     height: 60px;
     transition: .2s;
 }
+
+.button button {
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    bottom: 3vh;
+    left: 3vw;
+    cursor: pointer;
+    border: 1px solid rgb(124, 50, 38);
+    background: none;
+    font-size: 15px;
+    transition: .2s;
+}
+
+.button button:hover {
+    width: 170px;
+    height: 60px;
+    transition: .2s;
+}
