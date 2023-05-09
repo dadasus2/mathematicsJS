@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mathicon.png">
+    <link rel="stylesheet" href="scitani.css">
+    <title>Sčítání</title>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <h1 id="wrapperStreak"></h1>
+        <button id="wrapperClose">Zkusit znovu</button>
+    </div>
+    <div class="window">
+        <h1 class="priklad" id="h1"></h1>
+        <input type="text" onchange="Kontrola()" id="value">
+        <h2 class="hodnoceni" id="hodnoceni">Tak se ukaž</h2>
+        <h3 class="streak" id="streak">0</h3>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="nasobeni.js"></script>
+</body>
+
+</html>
